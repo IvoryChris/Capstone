@@ -1,0 +1,29 @@
+/* Custom styles for the portfolio */
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+.hero {
+    background: #007bff;
+    color: white;
+    padding: 50px 0;
+}
+
+.about-me, .contact, .portfolio, .resume {
+    padding: 50px 0;
+    background-color: #f8f9fa;
+}
+
+.card {
+    margin-bottom: 30px;
+}
+
+footer {
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
