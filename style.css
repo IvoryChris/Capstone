@@ -1,23 +1,61 @@
 /* Custom styles for the portfolio */
 body {
     font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
+/* Parallax Background */
+.parallax {
+    background-image: url('media/blur3.png'); 
+    height: 80vh; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Hero Section */
 .hero {
-    background: #007bff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70vh; 
     color: white;
-    padding: 50px 0;
+    padding: 50px;
+    position: relative;
+    z-index: 2;
+    margin-top: -600px;
 }
 
+.hero-text {
+    flex: 1;
+    padding-right: 20px;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+}
+
+/* Shrink Headshot Image */
+.hero img {
+    flex: 1;
+    max-width: 23%; 
+    border-radius: 10px;
+    position: relative;
+    z-index: 3;
+}
+
+/* General Section Styling */
 .about-me, .contact, .portfolio, .resume {
     padding: 50px 0;
     background-color: #f8f9fa;
 }
 
-.card {
-    margin-bottom: 30px;
-}
-
+/* Footer */
 footer {
     background-color: #343a40;
     color: white;
