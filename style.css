@@ -1,14 +1,155 @@
-/* Custom styles for the portfolio */
+/* General Reset */
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
+    line-height: 1.6;
+    color: #333;
 }
+
+
+
+
+
+/* Navigation Bar */
+.navbar {
+    background-color: #004080; /* Dark, professional blue */
+    padding: 12px 30px; /* Slightly thinner padding */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    font-family: 'Poppins', sans-serif; /* Updated font */
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    gap: 12px; /* Consistent spacing */
+}
+
+.logo {
+    width: 40px; /* Adjust logo size */
+    height: 40px; /* Adjust logo size */
+    border-radius: 50%; /* Circular logo */
+    object-fit: cover; /* Ensure the logo fits nicely */
+    border: 2px solid rgba(255, 255, 255, 0.1); /* Subtle border */
+}
+
+.brand-name {
+    font-size: 22px; /* Slightly smaller for elegance */
+    font-weight: 600; /* Semi-bold */
+    color: #ffffff; /* White text */
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+    letter-spacing: 0.5px; /* Slight letter spacing */
+}
+
+.brand-name:hover {
+    opacity: 0.9; /* Slight fade on hover */
+}
+
+.navbar-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px; /* Consistent spacing */
+}
+
+.navbar-links li {
+    display: inline-block;
+}
+
+.navbar-links a {
+    color: #ffffff; /* White text */
+    font-size: 16px; /* Slightly larger text */
+    font-weight: 500; /* Medium weight */
+    padding: 8px 16px; /* Slightly smaller padding */
+    border-radius: 4px; /* Subtle rounded corners */
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar-links a:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Slight white overlay on hover */
+    color: #ffffff; /* Ensure text stays white */
+}
+
+.navbar-links a.active {
+    background-color: #00264d; /* Even darker blue for active link */
+    font-weight: 600; /* Bold for active link */
+}
+
+/* Toggler Icon (for mobile) */
+.navbar-toggler {
+    display: none; /* Hidden by default */
+    border: none;
+    background: none;
+    cursor: pointer;
+    padding: 0.5rem;
+}
+
+.toggler-icon {
+    display: block;
+    width: 25px;
+    height: 2px; /* Thinner line */
+    background-color: #ffffff; /* White toggler icon */
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+.toggler-icon::before,
+.toggler-icon::after {
+    content: '';
+    width: 25px;
+    height: 2px; /* Thinner line */
+    background-color: #ffffff; /* White toggler icon */
+    position: absolute;
+    left: 0;
+    transition: transform 0.3s ease;
+}
+
+.toggler-icon::before {
+    top: -8px;
+}
+
+.toggler-icon::after {
+    top: 8px;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .navbar-links {
+        display: none; /* Hide links by default on mobile */
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
+        background-color: #004080; /* Match navbar background */
+        padding: 10px 0;
+        border-radius: 4px;
+    }
+
+    .navbar-links.active {
+        display: flex; /* Show links when toggler is clicked */
+    }
+
+    .navbar-toggler {
+        display: block; /* Show toggler on mobile */
+    }
+}
+
+
+
+
+
+
 
 /* Parallax Background */
 .parallax {
-    background-image: url('media/blur3.png'); 
-    height: 80vh; 
+    background-image: url('media/blur3.png');
+    height: 80vh;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -23,7 +164,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 70vh; 
+    height: 70vh;
     color: white;
     padding: 50px;
     position: relative;
@@ -40,10 +181,9 @@ body {
     text-align: left;
 }
 
-/* Shrink Headshot Image */
 .hero img {
     flex: 1;
-    max-width: 23%; 
+    max-width: 23%;
     border-radius: 10px;
     position: relative;
     z-index: 3;
@@ -66,6 +206,7 @@ footer {
     bottom: 0;
 }
 
+/* Education Section */
 .education {
     max-width: 1200px;
     margin: 0 auto;
