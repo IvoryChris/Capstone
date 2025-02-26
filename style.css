@@ -65,3 +65,47 @@ footer {
     width: 100%;
     bottom: 0;
 }
+
+.education {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.education h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.education-container {
+    display: flex;
+    gap: 20px; /* Space between columns */
+}
+
+.column {
+    flex: 1; /* Each column takes equal width */
+    padding: 10px;
+}
+
+.column h2 {
+    color: #34495e;
+    margin-top: 0;
+}
+
+.column p {
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+/* Optional: Add borders or background colors to differentiate columns */
+.ruhs {
+    border-right: 2px solid #ddd; /* Adds a border between columns */
+    padding-right: 20px;
+}
+
+.btc {
+    padding-left: 20px;
+}
