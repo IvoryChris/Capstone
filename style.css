@@ -1,12 +1,10 @@
-/* General Reset */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
     line-height: 1.6;
     color: #333;
 }
-
 
 
 
@@ -82,6 +80,10 @@ body {
     font-weight: 600; /* Bold for active link */
 }
 
+
+
+
+
 /* Toggler Icon (for mobile) */
 .navbar-toggler {
     display: none; /* Hidden by default */
@@ -119,6 +121,7 @@ body {
     top: 8px;
 }
 
+
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
     .navbar-links {
@@ -139,9 +142,6 @@ body {
         display: block; /* Show toggler on mobile */
     }
 }
-
-
-
 
 
 
@@ -208,12 +208,18 @@ footer {
 
 /* Education Section */
 .education {
-    max-width: 1200px;
+    font-size: small;
+    max-width: 1000px;
     margin: 0 auto;
     padding: 20px;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
+.education img {
+   max-width: 85px;
+}
+
 
 .education h1 {
     text-align: center;
@@ -245,8 +251,208 @@ footer {
 .ruhs {
     border-right: 2px solid #ddd; /* Adds a border between columns */
     padding-right: 20px;
+    width: 30%;
 }
 
 .btc {
     padding-left: 20px;
+    width: 30%;
+}
+
+
+
+/* About Me Section */
+.about-me {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.about-me .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.about-me p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Image Container */
+.about-me .image-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.about-me .image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px; /* Optional: Adds rounded corners to images */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-me .image-container {
+        flex-direction: column;
+    }
+
+    .about-me .image-container img {
+        width: 100%;
+    }
+}
+
+/* Portfolio Section */
+.portfolio {
+    padding: 80px 20px;
+    background-color: #f9f9f9;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Flexbox container for projects */
+.project-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    margin-bottom: 80px;
+}
+
+/* Left Column - Title & Button */
+.column-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.column-left h3 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.column-left .button {
+    padding: 12px 25px;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    background-color: #002852;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: transform 0.2s ease-in-out;
+    margin-top: 20px;
+}
+
+.column-left .button:hover {
+    transform: translateY(-3px);
+}
+
+/* Right Column - Description */
+.column-right {
+    flex: 1.5;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    line-height: 1.6;
+}
+
+.column-right h5 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .project-container {
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+    }
+
+    .column-left {
+        align-items: center;
+    }
+
+    .column-left h3 {
+        font-size: 1.8rem;
+    }
+
+    .column-left .button {
+        width: 100%;
+        text-align: center;
+    }
+
+    .column-right {
+        width: 100%;
+        padding: 20px;
+    }
+}
+
+
+
+
+/* Resume Section */
+.resume {
+    max-width: 800px;
+    margin: auto;
+    padding: 40px 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Section Titles */
+.resume-title {
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #003366;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.resume-section h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.resume-section p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.resume-section ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+/* Download Button */
+.btn-primary {
+    background-color: #003366;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #002244;
 }

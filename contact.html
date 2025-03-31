@@ -16,10 +16,10 @@
             <img src="media/Wlogo.png" alt="Logo" class="logo">
             <a href="#" class="brand-name">Ivory Christianson</a>
         </div>
-        <button class="navbar-toggler" aria-label="Toggle navigation">
-            <span class="toggler-icon"></span>
+        <button class="navbar-toggler" id="menu-toggle" aria-label="Toggle navigation">
+            ☰
         </button>
-        <ul class="navbar-links">
+        <ul class="navbar-links" id="nav-links">
             <li><a href="home.html">Home</a></li>
             <li><a href="aboutme.html">About Me</a></li>
             <li><a href="portfolio.html">Portfolio</a></li>
@@ -32,24 +32,27 @@
     <section class="contact py-5">
         <div class="container">
             <h2 class="text-center mb-4">Contact Me</h2>
-            <form>
+            <form id="contact-form">
                 <div class="mb-3">
                     <label for="name" class="form-label">Your Name</label>
-                    <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                    <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
                 </div>
                 <div class="mb-3">
                     <label for="email" class="form-label">Your Email</label>
-                    <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                    <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
                 </div>
                 <div class="mb-3">
                     <label for="message" class="form-label">Your Message</label>
-                    <textarea class="form-control" id="message" rows="4" placeholder="Enter your message"></textarea>
+                    <textarea class="form-control" id="message" rows="4" placeholder="Enter your message" required></textarea>
                 </div>
                 <button type="submit" class="btn btn-primary">Submit</button>
+                <p id="response-message" class="mt-3"></p>
             </form>
         </div>
     </section>
 
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script src="script.js"></script>
+
 </body>
 </html>
