@@ -1,51 +1,50 @@
+/* Global Styles */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
     line-height: 1.6;
     color: #333;
+    background-color: #f4f7fa; /* Light grey background */
 }
-
-
-
 
 /* Navigation Bar */
 .navbar {
-    background-color: #004080; /* Dark, professional blue */
-    padding: 12px 30px; /* Slightly thinner padding */
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    background-color: #2c3e50; /* Dark Blue */
+    padding: 12px 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    font-family: 'Poppins', sans-serif; /* Updated font */
+    font-family: 'Poppins', sans-serif;
 }
 
 .navbar-brand {
     display: flex;
     align-items: center;
-    gap: 12px; /* Consistent spacing */
+    gap: 12px;
 }
 
 .logo {
-    width: 40px; /* Adjust logo size */
-    height: 40px; /* Adjust logo size */
-    border-radius: 50%; /* Circular logo */
-    object-fit: cover; /* Ensure the logo fits nicely */
-    border: 2px solid rgba(255, 255, 255, 0.1); /* Subtle border */
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid rgba(255, 255, 255, 0.1);
 }
 
 .brand-name {
-    font-size: 22px; /* Slightly smaller for elegance */
-    font-weight: 600; /* Semi-bold */
-    color: #ffffff; /* White text */
+    font-size: 22px;
+    font-weight: 600;
+    color: #ffffff;
     text-decoration: none;
     transition: opacity 0.3s ease;
-    letter-spacing: 0.5px; /* Slight letter spacing */
+    letter-spacing: 0.5px;
 }
 
 .brand-name:hover {
-    opacity: 0.9; /* Slight fade on hover */
+    opacity: 0.8;
 }
 
 .navbar-links {
@@ -53,7 +52,7 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
-    gap: 20px; /* Consistent spacing */
+    gap: 20px;
 }
 
 .navbar-links li {
@@ -61,32 +60,28 @@ body {
 }
 
 .navbar-links a {
-    color: #ffffff; /* White text */
-    font-size: 16px; /* Slightly larger text */
-    font-weight: 500; /* Medium weight */
-    padding: 8px 16px; /* Slightly smaller padding */
-    border-radius: 4px; /* Subtle rounded corners */
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 8px 16px;
+    border-radius: 4px;
     text-decoration: none;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .navbar-links a:hover {
-    background-color: rgba(255, 255, 255, 0.1); /* Slight white overlay on hover */
-    color: #ffffff; /* Ensure text stays white */
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
 }
 
 .navbar-links a.active {
-    background-color: #00264d; /* Even darker blue for active link */
-    font-weight: 600; /* Bold for active link */
+    background-color: #003366; /* Even darker blue */
+    font-weight: 600;
 }
-
-
-
-
 
 /* Toggler Icon (for mobile) */
 .navbar-toggler {
-    display: none; /* Hidden by default */
+    display: none;
     border: none;
     background: none;
     cursor: pointer;
@@ -96,8 +91,8 @@ body {
 .toggler-icon {
     display: block;
     width: 25px;
-    height: 2px; /* Thinner line */
-    background-color: #ffffff; /* White toggler icon */
+    height: 2px;
+    background-color: #ffffff;
     position: relative;
     transition: transform 0.3s ease;
 }
@@ -106,8 +101,8 @@ body {
 .toggler-icon::after {
     content: '';
     width: 25px;
-    height: 2px; /* Thinner line */
-    background-color: #ffffff; /* White toggler icon */
+    height: 2px;
+    background-color: #ffffff;
     position: absolute;
     left: 0;
     transition: transform 0.3s ease;
@@ -121,83 +116,136 @@ body {
     top: 8px;
 }
 
-
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
     .navbar-links {
-        display: none; /* Hide links by default on mobile */
+        display: none;
         flex-direction: column;
         width: 100%;
         gap: 10px;
-        background-color: #004080; /* Match navbar background */
+        background-color: #2c3e50;
         padding: 10px 0;
         border-radius: 4px;
     }
 
     .navbar-links.active {
-        display: flex; /* Show links when toggler is clicked */
+        display: flex;
     }
 
     .navbar-toggler {
-        display: block; /* Show toggler on mobile */
+        display: block;
     }
-}
-
-
-
-
-/* Parallax Background */
-.parallax {
-    background-image: url('media/blur3.png');
-    height: 80vh;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 /* Hero Section */
 .hero {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 70vh;
-    color: white;
-    padding: 50px;
     position: relative;
-    z-index: 2;
-    margin-top: -600px;
+    height: 90vh; /* 60% of the viewport height */
+    overflow: hidden;
 }
 
-.hero-text {
-    flex: 1;
-    padding-right: 20px;
-    background: rgba(0, 0, 0, 0.6);
-    padding: 20px;
-    border-radius: 10px;
-    text-align: left;
+/* Hero Image Styling */
+.hero-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+    z-index: 1; /* Puts the image behind the carousel and text */
 }
 
-.hero img {
-    flex: 1;
-    max-width: 23%;
-    border-radius: 10px;
-    position: relative;
-    z-index: 3;
+/* Carousel Styling */
+#heroCarousel {
+    position: absolute;
+    top: 20%; /* Adjust carousel positioning */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70%; /* Carousel takes up 70% of the section width */
+    z-index: 2; /* Make sure the carousel is above the background image */
 }
 
-/* General Section Styling */
+.hero .carousel-inner img {
+    object-fit: contain; /* Ensures images don't stretch, but scale nicely */
+    height: 400px; /* Limit the height of the carousel images */
+    margin: 0 auto; /* Center the images */
+    border-radius: 35px;
+}
+
+/* Hero Text */
+.hero-text-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3; /* Ensure text is above the carousel and background image */
+    text-align: center;
+    color: #fff;
+    padding: 0 20px;
+    margin-top: 145px;
+}
+
+.hero-text h1 {
+    font-size: 4rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    font-weight: 300;
+}
+
+.hero-text a {
+    font-size: 1.1rem;
+    padding: 12px 30px;
+    background-color: #fff;
+    color: #333;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+}
+
+.hero-text a:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-text h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-text p {
+        font-size: 1rem;
+    }
+
+    .hero-text a {
+        font-size: 1rem;
+        padding: 10px 25px;
+    }
+
+    #heroCarousel {
+        width: 90%; /* Make carousel wider on smaller screens */
+        top: 15%; /* Adjust carousel placement for smaller screens */
+    }
+
+    .hero .carousel-inner img {
+        height: 150px; /* Smaller images for mobile */
+    }
+}
+
+/* Section Styling */
 .about-me, .contact, .portfolio, .resume {
     padding: 50px 0;
-    background-color: #f8f9fa;
+    background-color: #ffffff; /* White Background for sections */
 }
 
 /* Footer */
 footer {
-    background-color: #343a40;
+    background-color: #34495e; /* Grey-Blue */
     color: white;
     text-align: center;
     padding: 20px;
@@ -217,9 +265,8 @@ footer {
 }
 
 .education img {
-   max-width: 85px;
+    max-width: 85px;
 }
-
 
 .education h1 {
     text-align: center;
@@ -229,11 +276,11 @@ footer {
 
 .education-container {
     display: flex;
-    gap: 20px; /* Space between columns */
+    gap: 20px;
 }
 
 .column {
-    flex: 1; /* Each column takes equal width */
+    flex: 1;
     padding: 10px;
 }
 
@@ -247,52 +294,54 @@ footer {
     text-align: justify;
 }
 
-/* Optional: Add borders or background colors to differentiate columns */
-.ruhs {
-    border-right: 2px solid #ddd; /* Adds a border between columns */
-    padding-right: 20px;
-    width: 30%;
-}
-
-.btc {
-    padding-left: 20px;
-    width: 30%;
-}
-
-
-
 /* About Me Section */
 .about-me {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 40px 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
 }
 
-.about-me .container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
+.about-me h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+    color: #2c3e50;
 }
 
 .about-me p {
-    font-size: 1.1em;
-    line-height: 1.6;
-    margin-bottom: 20px;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #7f8c8d;
+    margin-bottom: 30px;
+    max-width: 800px;
 }
 
-/* Image Container */
 .about-me .image-container {
     display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
     justify-content: center;
-    margin-top: 20px;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
 .about-me .image-container img {
     max-width: 100%;
     height: auto;
-    border-radius: 8px; /* Optional: Adds rounded corners to images */
+    width: 250px;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.about-me .image-container img:hover {
+    transform: scale(1.05);
 }
 
 /* Responsive Design */
@@ -302,7 +351,8 @@ footer {
     }
 
     .about-me .image-container img {
-        width: 100%;
+        width: 80%; /* Images will take up more space on smaller screens */
+        margin-bottom: 20px;
     }
 }
 
@@ -312,96 +362,86 @@ footer {
     background-color: #f9f9f9;
     max-width: 1200px;
     margin: auto;
+    text-align: center;
 }
 
-/* Flexbox container for projects */
+.portfolio h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #2c3e50;
+    margin-bottom: 30px;
+}
+
 .project-container {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 50px;
-    margin-bottom: 80px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
 }
 
-/* Left Column - Title & Button */
-.column-left {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    text-align: left;
+.project-item {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+    transition: transform 0.3s ease;
+    margin-bottom: 30px;
 }
 
-.column-left h3 {
-    font-size: 2.2rem;
-    font-weight: 700;
+.project-item:hover {
+    transform: translateY(-10px);
+}
+
+.project-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.project-item .project-info {
+    padding: 20px;
+    color: #2c3e50;
+}
+
+.project-item .project-info h3 {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+}
+
+.project-item .project-info p {
+    font-size: 1.1rem;
     margin-bottom: 15px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+    color: #7f8c8d;
 }
 
-.column-left .button {
+.project-item .button {
     padding: 12px 25px;
     font-size: 14px;
     font-weight: 600;
     text-transform: uppercase;
-    background-color: #002852;
+    background-color: #003366;
     color: white;
     text-decoration: none;
     border-radius: 6px;
-    transition: transform 0.2s ease-in-out;
-    margin-top: 20px;
+    transition: background-color 0.3s ease;
 }
 
-.column-left .button:hover {
-    transform: translateY(-3px);
+.project-item .button:hover {
+    background-color: #002244;
 }
 
-/* Right Column - Description */
-.column-right {
-    flex: 1.5;
-    background: white;
-    padding: 25px;
-    border-radius: 10px;
-    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
-    line-height: 1.6;
-}
-
-.column-right h5 {
-    font-size: 1.5rem;
-    font-weight: 600;
-    margin-bottom: 15px;
-}
-
-/* Mobile Responsiveness */
+/* Responsive Design */
 @media (max-width: 768px) {
     .project-container {
         flex-direction: column;
-        gap: 30px;
-        text-align: center;
-    }
-
-    .column-left {
         align-items: center;
     }
 
-    .column-left h3 {
-        font-size: 1.8rem;
-    }
-
-    .column-left .button {
-        width: 100%;
-        text-align: center;
-    }
-
-    .column-right {
-        width: 100%;
-        padding: 20px;
+    .project-item {
+        width: 80%;
     }
 }
-
-
-
 
 /* Resume Section */
 .resume {
@@ -411,6 +451,84 @@ footer {
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Certifications Section */
+.certifications {
+    padding: 50px 0;
+    background-color: #f1f1f1;
+}
+
+.certifications h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.certification-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.certification-card h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.certification-card p {
+    font-size: 1rem;
+    margin: 5px 0;
+}
+
+/* Work History Section */
+.work-history {
+    padding: 50px 0;
+    background-color: #ffffff;
+}
+
+.work-history h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.work-history .row {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.work-history .col-md-6 {
+    width: 45%;
+}
+
+.work-history h4 {
+    font-size: 1.75rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.work-history p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .work-history .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .work-history .col-md-6 {
+        width: 100%;
+        margin-bottom: 20px;
+    }
 }
 
 /* Section Titles */
@@ -455,4 +573,34 @@ footer {
 
 .btn-primary:hover {
     background-color: #002244;
+}
+
+/* Skills */
+.skills {
+    padding: 50px 0;
+    background-color: #f1f1f1;
+    text-align: center;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.skill {
+    margin: 20px;
+    width: 150px;
+    text-align: center;
+}
+
+.skill img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+}
+
+.skill h4 {
+    font-size: 1rem;
+    font-weight: 600;
 }

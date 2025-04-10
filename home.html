@@ -19,7 +19,7 @@
             <img src="media/Wlogo.png" alt="Logo" class="logo">
             <a href="#" class="brand-name">Ivory Christianson</a>
         </div>
-        <button class="navbar-toggler" aria-label="Toggle navigation">
+        <button id="menu-toggle" class="navbar-toggler" aria-label="Toggle navigation">
             <span class="toggler-icon"></span>
         </button>
         <ul class="navbar-links">
@@ -34,15 +34,57 @@
     <!-- Parallax Background -->
     <div class="parallax"></div>
 
-    <!-- Hero Section -->
-    <section class="hero">
+
+    <!-- Hero Section with Background Image -->
+<section class="hero">
+
+    <!-- Hero Image (background) -->
+    <img src="media/hero.jpeg" alt="Hero Image" class="hero-img">
+    
+    <!-- Carousel on top of the Hero Image -->
+    <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="media/Headshot.jpg" class="d-block w-100" alt="First image">
+            </div>
+            <div class="carousel-item">
+                <img src="media/71150199180__E8A55CED-69F9-4320-A334-3E7B6ECD6856.JPG" class="d-block w-100" alt="Second image">
+            </div>
+            <div class="carousel-item">
+                <img src="media/IMG_6662.JPG" class="d-block w-100" alt="Third image">
+            </div>
+            <div class="carousel-item">
+                <img src="media/IMG_6291.JPG" class="d-block w-100" alt="Third image">
+            </div>
+            <div class="carousel-item">
+                <img src="media/IMG_8604.jpg" class="d-block w-100" alt="Third image">
+            </div>
+            <div class="carousel-item">
+                <img src="media/IMG_8746.JPG" class="d-block w-100" alt="Third image">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- Text Section Over the Hero Image -->
+    <div class="hero-text-container">
         <div class="hero-text">
             <h1 class="display-4">Ivory Christianson</h1>
-            <p class="lead">Hi there! I'm Ivory, a passionate web developer and .....</p>
-            <a href="portfolio.html" class="btn btn-light">View My Work</a>
+            <p class="lead">Hi, I'm Ivory – a passionate web developer committed to creating dynamic and user-friendly digital experiences.</p>
+            <a href="portfolio.html" class="btn btn-light btn-lg">View My Work</a>
         </div>
-        <img src="media/Headshot.jpg" alt="Ivory Christianson">
-    </section>
+    </div>
+</section>
+
+
+
 
 <!-- Duo Section -->
     <section class="education">
@@ -70,7 +112,66 @@
         </div>
     </section>
 
+    <!-- Certifications Section -->
+    <section class="certifications">
+        <div class="container">
+            <h2 class="text-center">Certifications</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="certification-card">
+                        <h3>Certificate of Professional Development</h3>
+                        <p>Issuing Organization: Blackhawk Technical College</p>
+                        <p>Completion Date: April 2025</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="certification-card">
+                        <h3>Snap Essentials</h3>
+                        <p>Issuing Organization: Snap Inc</p>
+                        <p>Completion Date: March 2025</p>
+                    </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- Work History Section -->
+    <section class="work-history">
+        <div class="container">
+            <h2 class="text-center">Work History</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <h4>Infommation Technology Intern</h4>
+                    <p>Company: Blackhawk Technical College</p>
+                    <p>Duration: June 2024 - August 2024</p>
+                    <p>Assisted with the transition to Windows 11 campus-wide, and supported the setup and migration of IT systems for the new Public Safety building. Gained hands-on experience with web development projects and IT systems management.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="skills">
+        <h2>Skills</h2>
+        <div class="skills-container">
+            <div class="skill">
+                <img src="media/html-icon.png" alt="HTML">
+                <h4>HTML</h4>
+            </div>
+            <div class="skill">
+                <img src="media/css-icon.png" alt="CSS">
+                <h4>CSS</h4>
+            </div>
+            <div class="skill">
+                <img src="media/js-icon.png" alt="JavaScript">
+                <h4>JavaScript</h4>
+            </div>
+            <div class="skill">
+                <img src="media/git-icon.png" alt="Git">
+                <h4>Git</h4>
+            </div>
+        </div>
+    </section>
+  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
