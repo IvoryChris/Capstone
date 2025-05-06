@@ -3,14 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ivory Christianson's E-Portfolio</title>
-      <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <!-- Poppin Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
-    <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="media/Wlogo.png">
+    <title>Ivory Christianson's Portfolio</title>
+   <!-- Bootstrap -->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+   <!-- Font Awesome -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+   <!-- Google Fonts -->
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+   <!-- Custom CSS -->
+   <link rel="stylesheet" href="style.css">
+   <!-- Favicon -->
+   <link rel="icon" type="image/x-icon" href="media/Wlogo.png">
 </head>
 <body>
     <!-- Navigation -->
@@ -23,76 +26,103 @@
             <span class="toggler-icon"></span>
         </button>
         <ul class="navbar-links">
-            <li><a href="home.html">Home</a></li>
-            <li><a href="aboutme.html">About Me</a></li>
+            <li><a href="home.html" class="active">Home</a></li>
             <li><a href="portfolio.html">Portfolio</a></li>
             <li><a href="contact.html">Contact</a></li>
             <li><a href="resume.html">Resume</a></li>
         </ul>
     </nav>
 
-    <!-- Parallax Background -->
-    <div class="parallax"></div>
-
-
-    <!-- Hero Section with Background Image -->
-<section class="hero">
-
-    <!-- Hero Image (background) -->
-    <img src="media/hero.jpeg" alt="Hero Image" class="hero-img">
-    
-    <!-- Carousel on top of the Hero Image -->
-    <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="media/Headshot.jpg" class="d-block w-100" alt="First image">
-            </div>
-            <div class="carousel-item">
-                <img src="media/71150199180__E8A55CED-69F9-4320-A334-3E7B6ECD6856.JPG" class="d-block w-100" alt="Second image">
-            </div>
-            <div class="carousel-item">
-                <img src="media/IMG_6662.JPG" class="d-block w-100" alt="Third image">
-            </div>
-            <div class="carousel-item">
-                <img src="media/IMG_6291.JPG" class="d-block w-100" alt="Third image">
-            </div>
-            <div class="carousel-item">
-                <img src="media/IMG_8604.jpg" class="d-block w-100" alt="Third image">
-            </div>
-            <div class="carousel-item">
-                <img src="media/IMG_8746.JPG" class="d-block w-100" alt="Third image">
+    <!-- Hero Section -->
+    <section class="hero">
+        <img src="media/Screenshot 2025-05-03 at 00.26.37.png" alt="Hero Image" class="hero-img">
+        <div class="hero-text-container">
+            <div class="hero-text">
+                <h1 class="display-4">Ivory Christianson</h1>
+                <p class="lead">Web Developer & Technology Enthusiast</p>
+                <a href="#about" class="btn">Learn More About Me</a>
             </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
-    </div>
+    </section>
 
-    <!-- Text Section Over the Hero Image -->
-    <div class="hero-text-container">
-        <div class="hero-text">
-            <h1 class="display-4">Ivory Christianson</h1>
-            <p class="lead">Hi, I'm Ivory – a passionate web developer committed to creating dynamic and user-friendly digital experiences.</p>
-            <a href="portfolio.html" class="btn btn-light btn-lg">View My Work</a>
+    <!-- Main Content -->
+    <main class="content-section" id="about">
+        <h1 class="section-title">Hi! I'm Ivory!</h1>
+        <p class="text-center" style="font-size: 1.2rem; max-width: 800px; margin: 0 auto 40px; color: var(--gray-text);">
+            All about who I am, what I love, and the journey I'm on.
+        </p>
+
+        <!-- About Me Section -->
+        <div class="about-content">
+            <h2>About Me</h2>
+            <p>As a senior at Rock University High School (RUHS), I'm preparing for graduation in June 2025. I'm proud to serve as the two-term student body president and as one of just 13 AVID-certified tutors. I also represent RUHS in the Leadership Development Academy of Rock County. My team, the Power of 7, is a group of professionals working together to support the revitalization of the YWCA CARE House.</p>
+            
+            <p>Through these leadership experiences, I've gained valuable skills in collaboration, communication, and community engagement. Whether leading student government, tutoring peers, or working with local organizations, I've learned how to lead with purpose and contribute meaningfully to the world around me.</p>
+            
+            <p>RUHS's unique structure has shaped my academic and personal growth. My first three years focused on building a strong academic foundation, while my senior year emphasizes leadership development and college readiness. Thanks to dual-enrollment courses at Blackhawk Technical College, I'm also gaining college-level experience that's preparing me for success after graduation.</p>
+            
+            <p>I'm currently finishing my final semester at Blackhawk Technical College, graduating in May 2025. I'm a proud member of Phi Theta Kappa's Beta Rho Psi chapter and a multi-semester President's List honoree.</p>
+            
+            <p>In summer 2024, I interned with Blackhawk Tech's IT department through the Rock Internship Program. I helped transition the campus to Windows 11 and assisted with IT equipment setup and relocation for the new Public Safety building—hands-on experience that deepened my understanding of IT systems.</p>
+            
+            <p>My studies and internship experience have made me confident in front-end web development, especially with HTML and CSS. I'm also skilled in JavaScript, GitHub, and frameworks like Bootstrap, which I use to create responsive, user-friendly websites.</p>
+            
+            <p>While front-end is my strength, I'm eager to grow my skills in advanced front-end tools, mobile app development, and broader programming areas. I'm passionate about technology and excited to keep learning how to use it to solve real-world problems.</p>
         </div>
-    </div>
-</section>
 
+        <hr class="divider">
 
+        <!-- Growth Section -->
+        <div class="growth-section">
+            <h2>Growth</h2>
+            <p>I didn't grow up in a typical home. I grew up at Pick 'N Save, a grocery store that became my safe space and second family. With a dad who wasn't around and a mom who couldn't be, Pick gave me what I was missing: community, stability, and role models who showed up for me.</p>
+            
+            <p>The store managers became the father figures I never had. They taught me how to lead, how to laugh, how to write (kind of), and how to care. And when our coworker Patil was diagnosed with cancer, our store rallied around her — proving that a community is built not just on shared space, but shared love and action.</p>
+            
+            <p>Pick closed in 2017, but what it gave me lives on. The values I learned there: empathy, teamwork, responsibility are the same ones I carry into every space I enter now, from school leadership to tech internships.</p>
+            
+            <p>Pick taught me this: leadership isn't about being in charge. It's about building a community where everyone can thrive.</p>
+            
+            <a href="media/pick-n-save-essay.pdf" class="essay-download" download="Ivory-Christianson-Pick-N-Save-Essay">
+                <i class="fas fa-download"></i> Download Full Essay
+            </a>
+        </div>
 
+        <hr class="divider">
 
-<!-- Duo Section -->
+        <!-- Goals Section -->
+        <h2 class="section-title">Goals</h2>
+        <div class="goals-container">
+            <div class="goal-card">
+                <h3>Short Term</h3>
+                <ul>
+                    <li>Working locally to build experience</li>
+                    <li>Setting up a financial nest egg</li>
+                    <li>Entering my career field in IT/Web Development</li>
+                    <li>Moving into my own place</li>
+                    <li>Achieving all this within 1-2 years!</li>
+                </ul>
+            </div>
+            <div class="goal-card">
+                <h3>Long Term</h3>
+                <ul>
+                    <li>Pursuing hands-on technical education (non-traditional path)</li>
+                    <li>Establishing myself in IT/Web Development field</li>
+                    <li>Owning my own home</li>
+                    <li>Having plenty of animal companions</li>
+                    <li>Continuing to grow my skills and knowledge</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <!-- Education Section -->
     <section class="education">
-        <h1>EDUCATION</h1>
+        <h1 class="section-title">Education</h1>
         <div class="education-container">
             <!-- Left Column: RUHS -->
             <div class="column ruhs">
-                <img src="media/RUHS.png">
+                <img src="media/RUHS.png" alt="RUHS Logo">
                 <h2>High School</h2>
                 <p>I'm a Senior at Rock University High School (RUHS), graduating in June 2025.</p>
                 <p>I am the first two-term student body president and one of only 13 AVID-certified tutors at RUHS. Additionally, I'm proud to be the first RUHS student to join the Leadership Development Academy of Rock County. My team, the Power of 7, consists of seven strangers working together to benefit the YWCA CARE House's revitalization efforts.</p>
@@ -102,7 +132,7 @@
 
             <!-- Right Column: BTC -->
             <div class="column btc">
-                <img src="media/BTC.png">
+                <img src="media/BTC.png" alt="BTC Logo">
                 <h2>College</h2>
                 <p>I'm also in my final semester at Blackhawk Technical College (BTC), graduating in May 2025. I'm a proud member of the Beta Rho Psi chapter of Phi Theta Kappa and a multi-semester President's list recipient.</p>
                 <p>During the summer of 2024, I had the opportunity to serve as the Blackhawk Tech IT intern through the Rock Internship Program. In this role, I assisted in the campus-wide transition to Windows 11 and managed the setup and relocation of IT equipment for the new Public Safety building, providing hands-on experience in IT systems management.</p>
@@ -112,45 +142,52 @@
         </div>
     </section>
 
-    <!-- Certifications Section -->
-    <section class="certifications">
-        <div class="container">
-            <h2 class="text-center">Certifications</h2>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="certification-card">
-                        <h3>Certificate of Professional Development</h3>
-                        <p>Issuing Organization: Blackhawk Technical College</p>
-                        <p>Completion Date: April 2025</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="certification-card">
-                        <h3>Snap Essentials</h3>
-                        <p>Issuing Organization: Snap Inc</p>
-                        <p>Completion Date: March 2025</p>
-                    </div>
-            </div>
+<!-- Certifications Section -->
+<section class="certifications-section">
+    <h2 class="section-title">Certifications</h2>
+    <div class="cert-grid">
+        <!-- Certification 1 -->
+        <div class="cert-card">
+            <h4>Snap Essentials Certificate</h4>
+            <p><strong>Issued by:</strong> Snap Inc</p>
+            <p><strong>Date:</strong> April 2025</p>
+            <a href="https://focus.snapchat.com/student/award/fupprtutU4yfbkpyCwCGinWM" class="btn-credential" target="_blank">Show Credential</a>
         </div>
-    </section>
 
-    <!-- Work History Section -->
-    <section class="work-history">
-        <div class="container">
-            <h2 class="text-center">Work History</h2>
-            <div class="row">
-                <div class="col-md-6">
-                    <h4>Infommation Technology Intern</h4>
-                    <p>Company: Blackhawk Technical College</p>
-                    <p>Duration: June 2024 - August 2024</p>
-                    <p>Assisted with the transition to Windows 11 campus-wide, and supported the setup and migration of IT systems for the new Public Safety building. Gained hands-on experience with web development projects and IT systems management.</p>
-            </div>
+        <!-- Certification 2 -->
+        <div class="cert-card">
+            <h4>Professional Development Certificate</h4>
+            <p><strong>Issued by:</strong> Blackhawk Technical College</p>
+            <p><strong>Date:</strong> March 2025</p>
+            <a href="#" class="btn-credential" target="_blank">Show Credential</a>
         </div>
-    </section>
+
+        <!-- Blank Certificate Slot -->
+        <div class="cert-card blank-card"></div>
+    </div>
+</section>
+
+<!-- Work History Section -->
+<section class="work-section">
+    <h2 class="section-title">Work History</h2>
+    <div class="work-grid">
+        <!-- Job 1 -->
+        <div class="work-card">
+            <h4>Information Technology Intern</h4>
+            <p><strong>Company:</strong> Blackhawk Technical College</p>
+            <p><strong>Duration:</strong> June 2024 – August 2024</p>
+            <p>Assisted in transitioning the campus to Windows 11 and supported equipment setup for the new Public Safety building. Gained hands-on experience with IT systems and web development projects.</p>
+        </div>
+
+        <!-- Blank Job Slot -->
+        <div class="work-card blank-card"></div>
+    </div>
+</section>
 
 
+    <!-- Skills Section -->
     <section class="skills">
-        <h2>Skills</h2>
+        <h2 class="section-title">Skills</h2>
         <div class="skills-container">
             <div class="skill">
                 <img src="media/html5.png" alt="HTML">
@@ -178,8 +215,44 @@
             </div>
         </div>
     </section>
-  
+
+    <!-- Footer -->
+    <footer>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/ivory-chris-718b44326/" target="_blank" aria-label="LinkedIn">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/IvoryChris" target="_blank" aria-label="GitHub">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="contact.html" aria-label="Contact">
+                <i class="fas fa-envelope"></i>
+            </a>
+        </div>
+        <p>&copy; 2025 Ivory Christianson. All rights reserved.</p>
+    </footer>
+
+    <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="script.js"></script>
+    <script>
+        // Mobile menu toggle
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            const navbarLinks = document.querySelector('.navbar-links');
+            navbarLinks.classList.toggle('active');
+            
+            // Optional: animate the hamburger icon
+            this.classList.toggle('open');
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 </body>
 </html>

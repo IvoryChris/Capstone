@@ -4,12 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact - Ivory Christianson</title>
+    <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="media/Wlogo.png">
+    <style>
+        /* Additional styles for success message */
+        .alert-success {
+            display: none;
+            padding: 15px;
+            margin-top: 20px;
+            border-radius: 5px;
+            background-color: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+            animation: fadeIn 0.5s;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        .success-icon {
+            color: #28a745;
+            margin-right: 10px;
+        }
+    </style>
 </head>
 <body>
-
     <!-- Navigation -->
     <nav class="navbar">
         <div class="navbar-brand">
@@ -21,59 +50,155 @@
         </button>
         <ul class="navbar-links" id="nav-links">
             <li><a href="home.html">Home</a></li>
-            <li><a href="aboutme.html">About Me</a></li>
             <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
             <li><a href="resume.html">Resume</a></li>
         </ul>
     </nav>
 
-    <section class="education">
-        <div class="education-container">
-            <!-- Left Column: Image -->
-            <div class="column-image">
-                <img src="media/Headshot.jpg" alt="Person with long brown hair and glasses sitting on outdoor steps, wearing a dark denim jacket over a black and teal patterned sweater, smiling at the camera.">
+    <!-- Contact Section -->
+    <section class="contact">
+        <h1 class="section-title">Get In Touch</h1>
+        
+        <div class="contact-container">
+            <div class="contact-image">
+                <img src="media/Headshot.jpg" alt="Ivory Christianson">
             </div>
-            <!-- Right Column: Text -->
-            <div class="column-text">
+            <div class="contact-info">
                 <h2>Ivory Christianson</h2>
                 <h5>Web Developer | Tech Enthusiast</h5>
+                
                 <h6>What I Do</h6>
                 <p>I specialize in web development but love exploring IT, digital marketing, and multimedia projects.</p>
+                
                 <h6>What I'm Looking For</h6>
-                <p>I’m seeking opportunities to work on innovative tech projects, from websites to video production.</p>
-                <i class="fa fa-linkedin-square" style="font-size:36px;color:blue"></i>
+                <p>I'm seeking opportunities to work on innovative tech projects, from websites to video production.</p>
+                
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/ivory-chris-718b44326/" target="_blank" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/IvoryChris" target="_blank" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
             </div>
         </div>
-    </section>
-
-
-
-    <!-- Contact Section -->
-    <section class="contact py-5">
-        <div class="container">
-            <h2 class="text-center mb-4">Contact Me</h2>
+        
+        <div class="contact-form">
+            <h3>Send Me a Message</h3>
             <form id="contact-form">
-                <div class="mb-3">
+                <div class="form-group">
                     <label for="name" class="form-label">Your Name</label>
                     <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
                 </div>
-                <div class="mb-3">
+                <div class="form-group">
                     <label for="email" class="form-label">Your Email</label>
                     <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
                 </div>
-                <div class="mb-3">
+                <div class="form-group">
                     <label for="message" class="form-label">Your Message</label>
                     <textarea class="form-control" id="message" rows="4" placeholder="Enter your message" required></textarea>
                 </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
-                <p id="response-message" class="mt-3"></p>
+                <button type="submit" class="submit-btn">Send Message</button>
+                
+                <!-- Success Message -->
+                <div id="success-message" class="alert-success">
+                    <i class="fas fa-check-circle success-icon"></i>
+                    <span>Your message has been sent successfully! I'll get back to you soon.</span>
+                </div>
             </form>
         </div>
     </section>
 
+    <!-- Footer -->
+    <footer>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/ivory-chris-718b44326/" target="_blank" aria-label="LinkedIn">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/IvoryChris" target="_blank" aria-label="GitHub">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="contact.html" aria-label="Contact">
+                <i class="fas fa-envelope"></i>
+            </a>
+        </div>
+        <p>&copy; 2025 Ivory Christianson. All rights reserved.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script src="script.js"></script>
+    <script>
+        // Update your existing script.js with this enhanced version
+        window.onload = function() {
+            // Initialize EmailJS
+            emailjs.init("WhSUdePBl6MRdOkXZ"); 
 
+            // Contact form submission handler
+            document.getElementById("contact-form").addEventListener("submit", function(event) {
+                event.preventDefault();
+                const submitBtn = event.target.querySelector('.submit-btn');
+                const successMessage = document.getElementById("success-message");
+                
+                // Change button text to sending state
+                submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+                submitBtn.disabled = true;
+                
+                emailjs.send("service_8qpfw74", "template_19lzfkp", {
+                    from_name: document.getElementById("name").value,
+                    from_email: document.getElementById("email").value,
+                    message: document.getElementById("message").value
+                }).then(
+                    function(response) {
+                        console.log('Success:', response);
+                        // Show success message
+                        successMessage.style.display = 'block';
+                        // Reset form
+                        document.getElementById("contact-form").reset();
+                        // Reset button
+                        submitBtn.innerHTML = 'Send Message';
+                        submitBtn.disabled = false;
+                        
+                        // Hide success message after 5 seconds
+                        setTimeout(() => {
+                            successMessage.style.display = 'none';
+                        }, 5000);
+                    },
+                    function(error) {
+                        console.log('Error:', error);
+                        // Show error in success message (reusing the same element)
+                        successMessage.innerHTML = '<i class="fas fa-exclamation-circle"></i> Failed to send message. Please try again.';
+                        successMessage.style.backgroundColor = '#f8d7da';
+                        successMessage.style.color = '#721c24';
+                        successMessage.style.borderColor = '#f5c6cb';
+                        successMessage.style.display = 'block';
+                        // Reset button
+                        submitBtn.innerHTML = 'Send Message';
+                        submitBtn.disabled = false;
+                    }
+                );
+            });
+
+            // Mobile Menu Toggle
+            const menuToggle = document.getElementById("menu-toggle");
+            const navLinks = document.getElementById("nav-links");
+
+            menuToggle.addEventListener("click", () => {
+                navLinks.classList.toggle("show");
+            });
+
+            // Initialize Bootstrap Carousel (if exists on page)
+            const carouselElement = document.getElementById('heroCarousel');
+            if (carouselElement) {
+                const carousel = new bootstrap.Carousel(carouselElement, {
+                    interval: 3000,
+                    ride: 'carousel'
+                });
+            }
+        };
+    </script>
 </body>
 </html>

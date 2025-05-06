@@ -4,12 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume - Ivory Christianson</title>
+    <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="media/Wlogo.png">
 </head>
 <body>
-
     <!-- Navigation -->
     <nav class="navbar">
         <div class="navbar-brand">
@@ -21,26 +27,24 @@
         </button>
         <ul class="navbar-links">
             <li><a href="home.html">Home</a></li>
-            <li><a href="aboutme.html">About Me</a></li>
             <li><a href="portfolio.html">Portfolio</a></li>
             <li><a href="contact.html">Contact</a></li>
-            <li><a href="resume.html">Resume</a></li>
+            <li><a href="resume.html" class="active">Resume</a></li>
         </ul>
     </nav>
 
-   <!-- Resume Section -->
-<section class="resume py-5">
-    <div class="container">
-        <h2 class="resume-title text-primary">RESUME</h2>
-
+    <!-- Resume Section -->
+    <section class="resume">
+        <h1 class="resume-title">Resume</h1>
+        
         <!-- Education -->
         <div class="resume-section">
             <h3>Education</h3>
             <p><strong>Blackhawk Technical College</strong><br>
-                Web Software Development, GPA: 3.85 (Expected Graduation: May 2025)
+                Web Software Development, GPA: 3.84 (Expected Graduation: May 2025)
             </p>
             <p><strong>Rock University High School</strong><br>
-                GPA: 3.91 (Expected Graduation: June 2025)
+                GPA: 3.88 (Expected Graduation: June 2025)
             </p>
         </div>
 
@@ -72,7 +76,7 @@
         <!-- Skills -->
         <div class="resume-section">
             <h3>Skills</h3>
-            <p><strong>Technical:</strong> HTML, CSS, IT Troubleshooting, Web Development</p>
+            <p><strong>Technical:</strong> HTML, CSS, JavaScript, IT Troubleshooting, Web Development</p>
             <p><strong>Soft:</strong> Leadership, Public Speaking, Team Collaboration</p>
         </div>
 
@@ -87,13 +91,35 @@
         </div>
 
         <!-- Download Resume Button -->
-        <div class="text-center mt-4">
-            <a href="assets/ivory_resume.pdf" class="btn btn-primary">Download My Resume</a>
+        <a href="media/ivory-resume.pdf" class="download-btn" download>
+            <i class="fas fa-download"></i> Download Resume
+        </a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/ivory-chris-718b44326/" target="_blank" aria-label="LinkedIn">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/IvoryChris" target="_blank" aria-label="GitHub">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="contact.html" aria-label="Contact">
+                <i class="fas fa-envelope"></i>
+            </a>
         </div>
-    </div>
-</section>
+        <p>&copy; 2025 Ivory Christianson. All rights reserved.</p>
+    </footer>
 
-
-    <script src="script.js"></script>
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Mobile menu toggle
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            const navbarLinks = document.querySelector('.navbar-links');
+            navbarLinks.classList.toggle('active');
+        });
+    </script>
 </body>
 </html>
