@@ -4,16 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ivory Christianson's Portfolio</title>
-   <!-- Bootstrap -->
-   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-   <!-- Font Awesome -->
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-   <!-- Google Fonts -->
-   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
-   <!-- Custom CSS -->
-   <link rel="stylesheet" href="style.css">
-   <!-- Favicon -->
-   <link rel="icon" type="image/x-icon" href="media/Wlogo.png">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="media/Wlogo.png">
 </head>
 <body>
     <!-- Navigation -->
@@ -46,173 +46,239 @@
     </section>
 
     <!-- Main Content -->
-    <main class="content-section" id="about">
-        <h1 class="section-title">Hi! I'm Ivory!</h1>
-        <p class="text-center" style="font-size: 1.2rem; max-width: 800px; margin: 0 auto 40px; color: var(--gray-text);">
-            All about who I am, what I love, and the journey I'm on.
-        </p>
-
-        <!-- About Me Section -->
-        <div class="about-content">
-            <div class="about-content">
-                <h2>About Me</h2>
-                <div class="about-container">
-                    <img src="media/Headshot.jpg" alt="Ivory Christianson" class="about-img">
-                    
-                    <div class="about-text">
-                      <p>Hey there! I’m Ivory — a soon-to-be graduate of both high school and college (yep, same year!). I’m totally into tech, whether it's building websites or geeking out over new tools. I’ve also got a creative side — you’ll often find me crocheting something cozy or colorful while listening to a podcast.</p>
-                  
-                      <p>I’m passionate about community, growth, and figuring things out as I go. From student leadership to tech internships, I’ve learned that the best way to lead is to care. I love working with people, building things that work (and look good), and learning whatever I can along the way. Thanks for stopping by!</p>
+    <main>
+        <!-- About & Skills Section -->
+        <section class="content-section bg-white" id="about">
+            <div class="about-skills-container">
+                <!-- About Me Section -->
+                <div class="about-content">
+                    <h2 class="section-title">Hi! I'm Ivory!</h2>
+                    <div class="about-container">
+                        <img src="media/Headshot.jpg" alt="Ivory Christianson" class="about-img">
+                        <div class="about-text">
+                            <p>Hey there! I'm Ivory — a soon-to-be graduate of both high school and college (yep, same year!). I'm totally into tech, whether it's building websites or geeking out over new tools. I've also got a creative side — you'll often find me crocheting something cozy or colorful while listening to a podcast.</p>
+                            <p>I'm passionate about community, growth, and figuring things out as I go. From student leadership to tech internships, I've learned that the best way to lead is to care. I love working with people, building things that work (and look good), and learning whatever I can along the way.</p>
+                        </div>
                     </div>
-                  </div>
-                  
-            
+                </div>
 
-        <hr class="divider">
+                <!-- Skills Section -->
+                <div class="skills-content">
+                    <h2 class="section-title">My Skills</h2>
+                    <div class="skills-container">
+                        <div class="skill">
+                            <img src="media/html5.png" alt="HTML">
+                            <h4>HTML</h4>
+                        </div>
+                        <div class="skill">
+                            <img src="media/css.png" alt="CSS">
+                            <h4>CSS</h4>
+                        </div>
+                        <div class="skill">
+                            <img src="media/js.png" alt="JavaScript">
+                            <h4>JavaScript</h4>
+                        </div>
+                        <div class="skill">
+                            <img src="media/gir.png" alt="Git">
+                            <h4>Git</h4>
+                        </div>
+                        <div class="skill">
+                            <img src="media/digitaldesign.png" alt="Digital Design">
+                            <h4>Digital Design</h4>
+                        </div>
+                        <div class="skill">
+                            <img src="media/marketing.png" alt="Social Media Marketing">
+                            <h4>Social Media Marketing</h4>
+                        </div>
+                    </div>
+                    <a href="#skills-chart" class="btn-credential">View Skills Breakdown</a>                </div>
+            </div>
+        </section>
 
-        <!-- Growth Section -->
-        <div class="growth-section">
-            <h2>Growth</h2>
-            <p>I didn't grow up in a typical home. I grew up at Pick 'N Save, a grocery store that became my safe space and second family. With a dad who wasn't around and a mom who couldn't be, Pick gave me what I was missing: community, stability, and role models who showed up for me.</p>
-            
-            <p>The store managers became the father figures I never had. They taught me how to lead, how to laugh, how to write (kind of), and how to care. And when our coworker Patil was diagnosed with cancer, our store rallied around her — proving that a community is built not just on shared space, but shared love and action.</p>
-            
-            <p>Pick closed in 2017, but what it gave me lives on. The values I learned there: empathy, teamwork, responsibility are the same ones I carry into every space I enter now, from school leadership to tech internships.</p>
-            
-            <p>Pick taught me this: leadership isn't about being in charge. It's about building a community where everyone can thrive.</p>
-            
-            <a href="media/pick-n-save-essay.pdf" class="essay-download" download="Ivory-Christianson-Pick-N-Save-Essay">
-                <i class="fas fa-download"></i> Download Full Essay
-            </a>
-        </div>
+        <!-- Certs & Work Section -->
+        <section class="content-section bg-gray">
+            <div class="certs-work-container">
+                <!-- Certifications Section -->
+                <div class="certifications-content">
+                    <h2 class="section-title">Certifications</h2>
+                    <div class="cert-grid">
+                        <!-- Certification 1 -->
+                        <div class="cert-card">
+                            <h4>Snap Essentials Certificate</h4>
+                            <p><strong>Issued by:</strong> Snap Inc</p>
+                            <p><strong>Date:</strong> April 2025</p>
+                            <a href="https://focus.snapchat.com/student/award/fupprtutU4yfbkpyCwCGinWM" class="btn-credential" target="_blank">Show Credential</a>
+                        </div>
 
-        <hr class="divider">
+                        <!-- Certification 2 -->
+                        <div class="cert-card">
+                            <h4>Professional Development Certificate</h4>
+                            <p><strong>Issued by:</strong> Blackhawk Technical College</p>
+                            <p><strong>Date:</strong> March 2025</p>
+                            <a href="#" class="btn-credential" target="_blank">Show Credential</a>
+                        </div>
+
+                        
+                    </div>
+                </div>
+
+                <!-- Work History Section -->
+                <div class="work-content">
+                    <h2 class="section-title">Work History</h2>
+                    <div class="work-grid">
+                        <!-- Job 1 -->
+                        <div class="work-card">
+                            <h4>Information Technology Intern</h4>
+                            <p><strong>Company:</strong> Blackhawk Technical College</p>
+                            <p><strong>Duration:</strong> June 2024 – August 2024</p>
+                            <p>Assisted in transitioning the campus to Windows 11 and supported equipment setup for the new Public Safety building. Gained hands-on experience with IT systems and web development projects.</p>
+                        </div>
+
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Chart Section -->
+        <section class="content-section bg-white">
+            <div class="skills-chart-container">
+                <h2 class="section-title">My Skills Breakdown</h2>
+                <p style="text-align: center;">Here's a quick overview of my technical and soft skills. I believe in continuous learning and growth, so these percentages reflect my current proficiency and are always evolving.</p>
+                <br>
+                
+                <div class="skills-chart">
+                    <h3>Technical Skills</h3>
+                    <div class="skill-bar">
+                        <div class="skill-name">HTML/CSS</div>
+                        <div class="skill-level" style="width: 80%">80%</div>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-name">JavaScript</div>
+                        <div class="skill-level" style="width: 55%">55%</div>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-name">Git/GitHub</div>
+                        <div class="skill-level" style="width: 60%">60%</div>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-name">Bootstrap</div>
+                        <div class="skill-level" style="width: 50%">50%</div>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-name">Digitial Design</div>
+                        <div class="skill-level" style="width: 80%">80%</div>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-name">Social Media Marketing</div>
+                        <div class="skill-level" style="width: 60%">60%</div>
+                    </div>
+                </div>
+                
+                <div class="skills-chart">
+                    <h3>Soft Skills</h3>
+                    <div class="skill-bar">
+                        <div class="skill-name">Leadership</div>
+                        <div class="skill-level" style="width: 70%">70%</div>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-name">Communication</div>
+                        <div class="skill-level" style="width: 75%">75%</div>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-name">Problem Solving</div>
+                        <div class="skill-level" style="width: 85%">85%</div>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-name">Teamwork</div>
+                        <div class="skill-level" style="width: 70%">70%</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="resume-download">
+                <a href="#" class="download-btn">Download Full Resume <i class="fas fa-download"></i></a>
+            </div>
+        </section>
 
         <!-- Goals Section -->
-        <h2 class="section-title">Goals</h2>
-        <div class="goals-container">
-            <div class="goal-card">
-                <h3>Short Term</h3>
-                <ul>
-                    <li>Working locally to build experience</li>
-                    <li>Setting up a financial nest egg</li>
-                    <li>Entering my career field in IT/Web Development</li>
-                    <li>Moving into my own place</li>
-                    <li>Achieving all this within 1-2 years!</li>
-                </ul>
+        <section class="content-section bg-gray">
+            <div class="goals-container">
+                <h2 class="section-title">My Goals</h2>
+                <div class="goals-inner">
+                    <div class="goal-card">
+                        <h3>Short Term</h3>
+                        <ul>
+                            <li>Working locally to build experience</li>
+                            <li>Setting up a financial nest egg</li>
+                            <li>Entering my career field in IT/Web Development</li>
+                            <li>Moving into my own place</li>
+                            <li>Achieving all this within 1-2 years!</li>
+                        </ul>
+                    </div>
+                    <div class="goal-card">
+                        <h3>Long Term</h3>
+                        <ul>
+                            <li>Pursuing hands-on technical education (non-traditional path)</li>
+                            <li>Establishing myself in IT/Web Development field</li>
+                            <li>Owning my own home</li>
+                            <li>Having plenty of animal companions</li>
+                            <li>Continuing to grow my skills and knowledge</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <div class="goal-card">
-                <h3>Long Term</h3>
-                <ul>
-                    <li>Pursuing hands-on technical education (non-traditional path)</li>
-                    <li>Establishing myself in IT/Web Development field</li>
-                    <li>Owning my own home</li>
-                    <li>Having plenty of animal companions</li>
-                    <li>Continuing to grow my skills and knowledge</li>
-                </ul>
+        </section>
+
+        <!-- Portfolio Preview Section -->
+        <section class="content-section bg-white">
+            <div class="portfolio-preview">
+                <h2 class="section-title">Portfolio Preview</h2>
+                <div class="portfolio-grid">
+                    <div class="portfolio-item">
+                        <div class="portfolio-image" style="background-image: url('media/project1.jpg');"></div>
+                        <div class="portfolio-content">
+                            <h3>Website Redesign</h3>
+                            <p>A complete redesign of a local business website, improving UX and increasing conversions by 30%.</p>
+                            <a href="portfolio.html#project1" class="portfolio-btn">View Details</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <div class="portfolio-image" style="background-image: url('media/project2.jpg');"></div>
+                        <div class="portfolio-content">
+                            <h3>Mobile App Prototype</h3>
+                            <p>Designed and prototyped a community-focused mobile application using Figma.</p>
+                            <a href="portfolio.html#project2" class="portfolio-btn">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="view-full-portfolio">
+                    <a href="portfolio.html" class="full-portfolio-btn">View My Full Portfolio <i class="fas fa-arrow-right"></i></a>
+                </div>
             </div>
-        </div>
+        </section>
+
+        <!-- Education Section -->
+        <section class="content-section bg-gray">
+            <div class="education-container">
+                <h2 class="section-title">Education</h2>
+                <div class="education-columns">
+                    <div class="education-column">
+                        <img src="media/RUHS.png" alt="RUHS Logo">
+                        <h3>Rock University High School</h3>
+                        <p>I'm graduating in June 2025 as the first two-term student body president at RUHS. My time here has been defined by leadership - whether through student government, as an AVID-certified tutor, or working with the Leadership Development Academy to benefit the YWCA CARE House.</p>
+                        <p>RUHS's unique structure gave me three years of strong academics followed by a senior year focused on leadership and college readiness, perfectly complementing my dual-enrollment courses at BTC.</p>
+                    </div>
+                    <div class="education-column">
+                        <img src="media/BTC.png" alt="BTC Logo">
+                        <h3>Blackhawk Technical College</h3>
+                        <p>Graduating in May 2025 with honors (President's list and Phi Theta Kappa), I've built strong technical skills through coursework and hands-on experience. My summer 2024 IT internship had me assisting with the campus-wide Windows 11 transition and setting up the new Public Safety building.</p>
+                        <p>I'm most confident in my HTML/CSS skills but continue to expand my JavaScript and framework knowledge. The blend of classroom learning and real-world application at BTC has been invaluable for my growth.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
-
-    <!-- Education Section -->
-    <section class="education">
-        <h1 class="section-title">Education</h1>
-        <div class="education-container">
-            <!-- Left Column: RUHS -->
-            <div class="column ruhs">
-                <img src="media/RUHS.png" alt="RUHS Logo">
-                <h2>High School</h2>
-                <p>I'm a Senior at Rock University High School (RUHS), graduating in June 2025.</p>
-                <p>I am the first two-term student body president and one of only 13 AVID-certified tutors at RUHS. Additionally, I'm proud to be the first RUHS student to join the Leadership Development Academy of Rock County. My team, the Power of 7, consists of seven strangers working together to benefit the YWCA CARE House's revitalization efforts.</p>
-                <p>Through these leadership roles—whether as a student body president, a tutor in the AVID program, or a member of the Leadership Development Academy—I've developed crucial skills in collaboration, problem-solving, and community engagement. These experiences have taught me how to lead with purpose and work effectively with others to bring about meaningful change.</p>
-                <p>RUHS's unique structure divides my education into two phases: the first three years focused on building a strong academic foundation in traditional subjects, while my senior year is centered around leadership development and college readiness. Through dual-enrollment courses at Blackhawk Technical College (BTC), I'm gaining valuable college-level experience that complements my leadership growth and helps prepare me for success after graduation.</p>
-            </div>
-
-            <!-- Right Column: BTC -->
-            <div class="column btc">
-                <img src="media/BTC.png" alt="BTC Logo">
-                <h2>College</h2>
-                <p>I'm also in my final semester at Blackhawk Technical College (BTC), graduating in May 2025. I'm a proud member of the Beta Rho Psi chapter of Phi Theta Kappa and a multi-semester President's list recipient.</p>
-                <p>During the summer of 2024, I had the opportunity to serve as the Blackhawk Tech IT intern through the Rock Internship Program. In this role, I assisted in the campus-wide transition to Windows 11 and managed the setup and relocation of IT equipment for the new Public Safety building, providing hands-on experience in IT systems management.</p>
-                <p>Through my coursework and practical experiences, I've gained proficiency in web development, particularly HTML and CSS, which I consider my strongest skills. I am also highly proficient in JavaScript, GitHub, and frameworks like Bootstrap, allowing me to build dynamic, responsive websites.</p>
-                <p>While I have a solid foundation in front-end development, I'm still eager to deepen my knowledge in advanced front-end technologies and mobile app development and expand into programming beyond web development. I'm excited to continue learning, as I'm passionate about technology and its potential to solve real-world problems.</p>
-            </div>
-        </div>
-    </section>
-
-<!-- Certifications Section -->
-<section class="certifications-section">
-    <h2 class="section-title">Certifications</h2>
-    <div class="cert-grid">
-        <!-- Certification 1 -->
-        <div class="cert-card">
-            <h4>Snap Essentials Certificate</h4>
-            <p><strong>Issued by:</strong> Snap Inc</p>
-            <p><strong>Date:</strong> April 2025</p>
-            <a href="https://focus.snapchat.com/student/award/fupprtutU4yfbkpyCwCGinWM" class="btn-credential" target="_blank">Show Credential</a>
-        </div>
-
-        <!-- Certification 2 -->
-        <div class="cert-card">
-            <h4>Professional Development Certificate</h4>
-            <p><strong>Issued by:</strong> Blackhawk Technical College</p>
-            <p><strong>Date:</strong> March 2025</p>
-            <a href="#" class="btn-credential" target="_blank">Show Credential</a>
-        </div>
-
-        <!-- Blank Certificate Slot -->
-        <div class="cert-card blank-card"></div>
-    </div>
-</section>
-
-<!-- Work History Section -->
-<section class="work-section">
-    <h2 class="section-title">Work History</h2>
-    <div class="work-grid">
-        <!-- Job 1 -->
-        <div class="work-card">
-            <h4>Information Technology Intern</h4>
-            <p><strong>Company:</strong> Blackhawk Technical College</p>
-            <p><strong>Duration:</strong> June 2024 – August 2024</p>
-            <p>Assisted in transitioning the campus to Windows 11 and supported equipment setup for the new Public Safety building. Gained hands-on experience with IT systems and web development projects.</p>
-        </div>
-
-        <!-- Blank Job Slot -->
-        <div class="work-card blank-card"></div>
-    </div>
-</section>
-
-
-    <!-- Skills Section -->
-    <section class="skills">
-        <h2 class="section-title">Skills</h2>
-        <div class="skills-container">
-            <div class="skill">
-                <img src="media/html5.png" alt="HTML">
-                <h4>HTML</h4>
-            </div>
-            <div class="skill">
-                <img src="media/css.png" alt="CSS">
-                <h4>CSS</h4>
-            </div>
-            <div class="skill">
-                <img src="media/js.png" alt="JavaScript">
-                <h4>JavaScript</h4>
-            </div>
-            <div class="skill">
-                <img src="media/gir.png" alt="Git">
-                <h4>Git</h4>
-            </div>
-            <div class="skill">
-                <img src="media/digitaldesign.png" alt="Digital Design">
-                <h4>Digital Design</h4>
-            </div>
-            <div class="skill">
-                <img src="media/marketing.png" alt="Social Media Marketing">
-                <h4>Social Media Marketing</h4>
-            </div>
-        </div>
-    </section>
 
     <!-- Footer -->
     <footer>
