@@ -41,3 +41,23 @@ const bootstrapCarousel = new bootstrap.Carousel(document.getElementById('heroCa
     interval: 3000, // 3 seconds between slides (change this value as needed)
     ride: 'carousel' // Auto-starts the carousel
 });
+
+// Scroll Animation Trigger
+document.addEventListener('DOMContentLoaded', () => {
+    const elements = document.querySelectorAll('.journey-section, .goal-card, .cert-card, .work-card');
+    const inView = (el) => {
+        const rect = el.getBoundingClientRect();
+        return rect.top >= 0 && rect.bottom <= window.innerHeight;
+    };
+
+    const animateOnScroll = () => {
+        elements.forEach((el) => {
+            if (inView(el)) {
+                el.classList.add('visible');
+            }
+        });
+    };
+
+    window.addEventListener('scroll', animateOnScroll);
+    animateOnScroll(); // Trigger on page load
+});
