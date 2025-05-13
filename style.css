@@ -12,6 +12,10 @@
     --gray-bg: #f5f5f5;
 }
 
+html, body {
+    overflow-x: hidden;
+}
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
@@ -38,7 +42,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Content Sections */
 .content-section {
     padding: 80px 20px;
-    max-width: 1300px; /* Increased from 1200px */
+    max-width: 1300px; 
     margin: 0 auto;
 }
 
@@ -71,8 +75,8 @@ h1, h2, h3, h4, h5, h6 {
     padding: 40px;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    max-width: 1100px; /* Added for wider white box */
-    margin: 0 auto; /* Center the wider box */
+    max-width: 1100px; 
+    margin: 0 auto; 
 }
 
 .about-content {
@@ -149,8 +153,8 @@ h1, h2, h3, h4, h5, h6 {
     padding: 40px;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    max-width: 1100px; /* Added for wider white box */
-    margin: 0 auto; /* Center the wider box */
+    max-width: 1100px; 
+    margin: 0 auto; 
 }
 
 .certifications-content, .work-content {
@@ -160,14 +164,14 @@ h1, h2, h3, h4, h5, h6 {
 
 .cert-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Changed to force 2 columns */
-    gap: 30px; /* Increased gap */
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 30px; 
 }
 
 .work-grid {
     display: grid;
-    grid-template-columns: 1fr; /* Single column layout */
-    gap: 30px; /* Increased gap */
+    grid-template-columns: 1fr;
+    gap: 30px; 
 }
 
 .cert-card, .work-card {
@@ -176,7 +180,7 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    height: 100%; /* Make cards fill available space */
+    height: 100%; 
 }
 
 .cert-card:hover, .work-card:hover {
@@ -272,7 +276,7 @@ h1, h2, h3, h4, h5, h6 {
 .goals-container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 40px; /* Added side padding */
+    padding: 0 40px; 
 }
 
 .goals-inner {
@@ -450,6 +454,10 @@ h1, h2, h3, h4, h5, h6 {
     transform: translateX(5px);
 }
 
+.menu-toggle {
+  display: none;
+}
+
 .logo {
     width: 42px;
     height: 42px;
@@ -467,7 +475,7 @@ h1, h2, h3, h4, h5, h6 {
 .brand-name {
     font-size: 24px;
     font-weight: 600;
-    color: var(--light-text);
+    color: white;
     text-decoration: none;
     transition: all 0.3s ease;
     letter-spacing: 0.8px;
@@ -503,7 +511,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar-links a {
-    color: var(--light-text);
+    color: white; 
     font-size: 17px;
     font-weight: 500;
     padding: 10px 15px;
@@ -595,6 +603,91 @@ h1, h2, h3, h4, h5, h6 {
     opacity: 0;
 }
 
+/* ==============================================
+   RESPONSIVE NAVIGATION
+   ============================================== */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: var(--primary-color);
+    position: relative;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+}
+
+.navbar a,
+.navbar-links li a {
+    color: white; 
+    text-decoration: none;
+}
+
+.navbar-links li a {
+    color: white;
+    padding: 10px 15px;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.logo {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.navbar-toggler {
+    display: none;
+    flex-direction: column;
+    gap: 6px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.toggler-bar {
+    width: 25px;
+    height: 3px;
+    background-color: var(--light-text);
+    border-radius: 2px;
+    transition: 0.3s;
+}
+
+.navbar-links {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+/* ========== Mobile Styles ========== */
+@media screen and (max-width: 768px) {
+    .navbar-toggler {
+        display: flex;
+    }
+
+    .navbar-links {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: var(--background-color);
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+        padding: 20px 0;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+}
+
 
 /* ==============================================
    HERO SECTION
@@ -670,7 +763,7 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 700;
     font-size: clamp(3rem, 8vw, 5rem);
     line-height: 1.2;
-    margin }
+    margin-bottom: 20px;}
 
     .hero-text a {
     font-size: 1.1rem;
@@ -686,7 +779,7 @@ h1, h2, h3, h4, h5, h6 {
 .hero-text a:hover {
     background-color: var(--primary-color);
     color: var(--light-text);
-}"
+}
 
 
 
@@ -1057,6 +1150,18 @@ h1, h2, h3, h4, h5, h6 {
     .project-content {
         padding: 30px;
     }
+    .navbar-links {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    background-color: var(--primary-color);
+    margin-top: 10px;
+}
+
+    .navbar-links.active {
+        display: flex;
+    }
+
 }
 
 @media (max-width: 768px) {

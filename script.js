@@ -59,10 +59,21 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     window.addEventListener('scroll', animateOnScroll);
-    animateOnScroll(); // Trigger on page load
+    animateOnScroll(); 
 });
 
-/* Add to existing JavaScript for scroll effect */
+/* Hamburger */
+
+  const menuToggle = document.getElementById('menu-toggle');
+  const navLinks = document.querySelector('.nav-links');
+
+  menuToggle.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+    menuToggle.classList.toggle('open');
+  });
+
+
+/* Scroll effect */
 window.addEventListener('scroll', function() {
     const navbar = document.querySelector('.navbar');
     if (window.scrollY > 50) {
@@ -71,3 +82,4 @@ window.addEventListener('scroll', function() {
         navbar.classList.remove('scrolled');
     }
 });
+
