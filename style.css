@@ -450,12 +450,18 @@ h1, h2, h3, h4, h5, h6 {
     transition: transform 0.3s ease;
 }
 
+.navbar-toggle .icon-bar {
+         background-color: white !important;
+       }
+
+
 .navbar-brand:hover {
     transform: translateX(5px);
 }
 
 .menu-toggle {
   display: none;
+  color: white;
 }
 
 .logo {
@@ -557,6 +563,7 @@ h1, h2, h3, h4, h5, h6 {
     cursor: pointer;
     padding: 0.75rem;
     transition: transform 0.3s ease;
+    color: blue;
 }
 
 .navbar-toggler:hover {
@@ -647,12 +654,13 @@ h1, h2, h3, h4, h5, h6 {
     background: none;
     border: none;
     cursor: pointer;
+    color: white;
 }
 
 .toggler-bar {
     width: 25px;
     height: 3px;
-    background-color: var(--light-text);
+    background-color: white;
     border-radius: 2px;
     transition: 0.3s;
 }
@@ -667,6 +675,7 @@ h1, h2, h3, h4, h5, h6 {
 @media screen and (max-width: 768px) {
     .navbar-toggler {
         display: flex;
+        color: white;
     }
 
     .navbar-links {
